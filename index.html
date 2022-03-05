@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+
+    <!--Owl css-->
+    <link rel="stylesheet" href="style/owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="style/owl/owl.theme.default.min.css">
+
+    <!--Responsividade-->
+    <link rel="stylesheet" href="style/responsive.css">
+
+    <!--Dialog Box-->
+    <link rel="stylesheet" href="style/dialog.box.css">
+
+    <title>STARWARSFLIX</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h2 class="logo">STARWARSFLIX</h2>
+            <nav class="nav-content">
+                <a href="#inicio">Início</a>
+                <a href="#filmes">Filmes</a>
+                <a href="#animacoes">Animações</a>
+                <a href="#series">Séries</a>
+            </nav>
+        </div>
+    </header>   
+    
+    <main>
+        <div class="filme-principal" id="inicio">
+            <div class="container">
+                <h3 class="titulo">EPISÓDIO IV: UMA NOVA ESPERANÇA</h3>
+                <p class="descricao">A princesa Leia é mantida refém pelas forças imperiais comandadas por Darth Vader. Luke Skywalker e Han Solo precisam libertá-la e restaurar a liberdade e a justiça na galáxia.</p>
+                <div class="botoes">
+                    <a href="https://www.youtube.com/watch?v=Po1Z_X0FpzY" target="_blank">
+                        <button role="button" class="botao" >
+                            <i class="fa-solid fa-jedi"></i>
+                            ASSISTIR AGORA
+                        </button>
+                    </a>
+                    <button role="button" class="botao" id="myBtn">
+                        <i class="fa-brands fa-galactic-republic"></i>
+                        MAIS INFORMAÇÕES
+                    </button>
+                    <div id="myModal" class="modal">                        
+                        <div class="modal-content">
+                            <span class="close">&times;</span>
+                            <ul class="text-dialog">
+                                <li> Título: Episódio IV: Uma Nova Esperança </li>
+                                <li> Data de lançamento: 17/11/1977 </li>
+                                <li> Gênero: Aventura, Ação, Ficção Científica </li>
+                                <li> Duração: 2 horas e 1 minuto </li>
+                                <li> Diretor: George Lucas </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div class="carrossel-filmes" id="filmes">
+        <div class="titulo_carrossel">
+            <h3>Filmes</h3>
+        </div>
+        <div class="owl-carousel owl-theme">
+            <div class="item">
+                <img class="box-filme" src="img/carrossel-filmes/ep_i.jpg" alt="">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/carrossel-filmes/ep_ii.jpg" alt="">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/carrossel-filmes/ep_iii.jpg" alt="">
+            </div> <div class="item">
+                <img class="box-filme" src="img/carrossel-filmes/ep_iv.jpg" alt="">
+            </div> <div class="item">
+                <img class="box-filme" src="img/carrossel-filmes/ep_v.jpg" alt="">
+            </div> <div class="item">
+                <img class="box-filme" src="img/carrossel-filmes/ep_vi.jpg" alt="">
+            </div> <div class="item">
+                <img class="box-filme" src="img/carrossel-filmes/ep_vii.jpg" alt="">
+            </div> <div class="item">
+                <img class="box-filme" src="img/carrossel-filmes/ep_viii.jpg" alt="">
+            </div> <div class="item">
+                <img class="box-filme" src="img/carrossel-filmes/ep_ix.jpg" alt="">
+            </div> <div class="item">
+                <img class="box-filme" src="img/carrossel-filmes/rogue_one.jpg" alt="">
+            </div> <div class="item">
+                <img class="box-filme" src="img/carrossel-filmes/han_solo.jpg" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="carrossel-animacoes" id="animacoes">
+        <div class="titulo_carrossel">
+            <h3>Animações</h3>
+        </div>
+        <div class="owl-carousel owl-theme">
+            <div class="item">
+                <img class="box-animacoes" src="img/carrossel-animacoes/img-1.jpg" alt=""> 
+            </div>
+            <div class="item">
+                <img class="box-animacoes" src="img/carrossel-animacoes/img-2.jpg" alt=""> 
+            </div>
+            <div class="item">
+                <img class="box-animacoes" src="img/carrossel-animacoes/img-3.jpg" alt=""> 
+            </div>
+            <div class="item">
+                <img class="box-animacoes" src="img/carrossel-animacoes/img-4.jpg" alt=""> 
+            </div>
+            <div class="item">
+                <img class="box-animacoes" src="img/carrossel-animacoes/img-5.jpg" alt=""> 
+            </div>
+            <div class="item">
+                <img class="box-animacoes" src="img/carrossel-animacoes/img-6.jpg" alt=""> 
+            </div>
+        </div>
+    </div>
+
+    <div class="carrossel-series" id=series>
+        <div class="titulo_carrossel">
+            <h3>Séries</h3>
+        </div>
+        <div class="owl-carousel owl-theme">
+            <div class="item">
+                <img class="box-series" src="img/carrossel-series/boba_fett.jpg" alt="">
+            </div>
+            <div class="item">
+                <img class="box-series" src="img/carrossel-series/mandalorian.jpg" alt="">
+            </div>
+        </div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/2ded6437b5.js" crossorigin="anonymous"></script>
+    <script src="js/owl/jquery.min.js"></script>
+    <script src="js/owl/owl.carousel.min.js"></script>
+    <script src="js/owl/setup.js"></script>
+    <script src="js/owl/dialog.box.js"></script>
+    
+    <footer>May the force be with you!</footer>
+</body>
+</html>

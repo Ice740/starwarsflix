@@ -1,0 +1,148 @@
+:root { 
+    --amarelo:#ffff00;
+    --preto: #141414; 
+} 
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*elementos base*/
+body {
+    background-image: url("/img/background-img.jpg");
+    font-family: 'Times New Roman', Times, serif;
+    color: #fff;
+
+}
+
+header .container {
+    border: 1px solid #000;
+    background-color: #000;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+ header .logo {
+     margin-left: 5px;
+    color: var(--amarelo);
+    font-family:'Anton', sans-serif;
+    font-size: 40px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #fff;
+    margin-right: 10px;
+}
+
+header nav a:hover {
+    color: #ffff00;
+}
+
+.nav-content {
+    font-size: 20px;
+}
+
+.filme-principal{
+    font-size: 16px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65),rgba(0, 0, 0, 0.65)100%), url('/img/capa_iv.jpg');
+
+    height: 400px;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.filme-principal .descricao {
+    margin-top: 10px;
+    margin-bottom: 40px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.filme-principal .titulo {
+    margin-top: 10%;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+
+.botao{
+    background-color: rgba(65, 60, 60, 0.5);
+    border: none;
+    color: #fff;
+
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 15px;
+
+    cursor: pointer;
+    transition: .2s ease all;
+}
+
+.botao:hover {
+    background-color: #141414;
+    color: #ffff00;
+}
+
+.botao i{
+    margin-right: 8px;
+}
+
+.container{
+    margin-left: 15px;
+}
+
+.filme-principal .container {
+    width: 50%;
+}
+
+.box-filme  {
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.box-series {
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.box-animacoes  {
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.carrossel-filmes {
+    margin-top: 8px;
+}
+
+.carrossel-series {
+    margin-top: 8px;
+}
+
+.carrossel-animacoes {
+    margin-top: 8px;
+}
+
+.titulo_carrossel {
+    margin-bottom: 5px;
+    margin-left: 15px;
+    font-size: 20px;
+}
+
+footer {
+    margin-top: 15px;
+    background-color: #000;
+    color: #ffff00;
+    text-align: center;
+    font-size: 30px;
+
+}
